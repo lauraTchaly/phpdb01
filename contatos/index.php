@@ -39,17 +39,17 @@ require($_SERVER['DOCUMENT_ROOT'] . '/_header.php');
 
         <p>
             <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" required minlength="3" value="Joca da Silva">
+            <input type="text" name="nome" id="nome" required minlength="3" >
         </p>
 
         <p>
             <label for="emil">E-mail:</label>
-            <input type="email" name="email" id="email" required value="joca@silva">
+            <input type="email" name="email" id="email" required >
         </p>
 
         <p>
             <label for="assunto">Assunto:</label>
-            <input type="text" name="assunto" id="assunto" required minlength="5" value="Assunto do Joca">
+            <input type="text" name="assunto" id="assunto" required minlength="5" >
         </p>
 
         <p>
