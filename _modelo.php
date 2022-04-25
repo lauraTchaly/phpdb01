@@ -1,61 +1,62 @@
-
 <?php
 
-// arquivo que faz a configuraçaõ inicial da página.
-// por exemplo, conecta-se ao banco de dados.
+/**
+ * Arquivo que faz a configuração incial da página.
+ * Por exemplo, conecta-se ao banco de dados.
+ * 
+ * A superglobal "$_SERVER['DOCUMENT_ROOT']" retorna o caminho da raiz do site no Windows.
+ * Ex.: C:\xampp\htdocs 
+ *     Referências:
+ *     → https://www.w3schools.com/php/php_includes.asp
+ *     → https://www.php.net/manual/pt_BR/function.include.php
+ *     → https://www.php.net/manual/pt_BR/language.variables.superglobals.php
+ */
 require($_SERVER['DOCUMENT_ROOT'] . '/_config.php');
 
-// define o titulo dessa 
-$title = " Quem tem fome tem pressa...";
+/***********************************************
+ * Seus códigos PHP desta página iniciam aqui! *
+ ***********************************************/
 
-// inclui o cabeçalho da página
-require('_header.php')
 
+/************************************************
+ * Seus códigos PHP desta página terminam aqui! *
+ ************************************************/
+
+/**
+ * Variável que define o título desta página.
+ * Essa variável é usada no arquivo "_header.php".
+ * OBS: para a página inicial (index.php) usaremos o 'slogan' do site.
+ *     Referências:
+ *     → https://www.w3schools.com/php/php_variables.asp
+ *     → https://www.php.net/manual/pt_BR/language.variables.basics.php
+ */
+$title = "Quem tem fome tem pressa...";
+
+/**
+ * Inclui o cabeçalho da página.
+ */
+require($_SERVER['DOCUMENT_ROOT'] . '/_header.php');
 
 ?>
-            <section>
 
-                <h2>Título da página</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iste aliquam aperiam voluptatem
-                    molestias nemo odit unde modi cupiditate exercitationem doloremque quaerat soluta rerum quidem
-                    dignissimos officiis sapiente, aut alias!</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio soluta voluptatum consequatur
-                    voluptatibus cupiditate temporibus qui, nostrum deserunt minus laudantium in officia rem dignissimos
-                    facilis modi culpa error aliquam? Quam?</p>
+<section>
 
-            </section>
+    <h2>Título da página</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iste aliquam aperiam voluptatem molestias nemo odit unde modi cupiditate exercitationem doloremque quaerat soluta rerum quidem dignissimos officiis sapiente, aut alias!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio soluta voluptatum consequatur voluptatibus cupiditate temporibus qui, nostrum deserunt minus laudantium in officia rem dignissimos facilis modi culpa error aliquam? Quam?</p>
 
-            <aside>
+</section>
 
-                <h3>Lateral</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, aperiam corporis culpa consequatur
-                    iusto.</p>
+<aside>
 
-            </aside>
+    <h3>Lateral</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, aperiam corporis culpa consequatur iusto.</p>
 
-        </main>
-
-        <footer>
-
-            <a href="/" title="Página inicial"><i class="fa-solid fa-house-chimney"></i></a>
-            
-
-             <!-- &copy; = cria o símbulo do copyright -->
-            <div>© Copyright 2022 Vitugo.</div>
-
-            <!-- "#top" = criando um id -->
-            <a href="#top" title="Topo da página"><i class="fa-solid fa-circle-up"></i></a>
-
-        </footer>
-
-    </div>
-
-</body>
-
-</html>
+</aside>
 
 <?php
 
-require('_footer.php')
-?>
-        
+/**
+ * Inclui o rodapé da página.
+ */
+require($_SERVER['DOCUMENT_ROOT'] . '/_footer.php');

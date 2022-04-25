@@ -1,20 +1,25 @@
 <?php
 
-// essa deve ser sempre a primeira linha de codigo em site
-header('content-Type: text/html; charset=utf-8');
+/**
+ * Gera conteúdo sempre em UTF-8.
+ * DEVE SER sempre a primeira linha de código.
+ */
+header('Content-Type: text/html; charset=utf-8');
 
-// conexão com banco de dados:
-//         As variaveis abaixo devem ser definidas conforme o provador de hospedagem
-//           os dados abaixo são do xampp
-
+/**
+ * Dados de conexão com o banco de dados.
+ */
 $db = array(
-    "hostname" => "localhost",
-    "server" => "localhost",
-    "database" => "vitugo",
-    "username" => "root",
-    "password" => ""
+    'hostname' => 'localhost',
+    'username' => 'root',
+    'password' => '',
+    'database' => 'vitugo'
 );
-$conn = new mysqli($db["hostname"], $db["username"], $db["password"], $db["database"]);
+
+/**
+ * Linha de conexão com o banco de dados.
+ */
+$conn = new mysqli($db['hostname'], $db['username'], $db['password'], $db['database']);
 
 /**
  * Seta transações entre MySQL/MariaDB e PHP para UTF-8.
@@ -34,4 +39,3 @@ $conn->query('SET lc_time_names = pt_BR');
  * Define o fuso horário (opcional + recomendado).
  */
 date_default_timezone_set('America/Sao_Paulo');
-
