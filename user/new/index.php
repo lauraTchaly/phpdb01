@@ -21,11 +21,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") :
 
     // Recebe o campo 'nome' do formulário, sanitiza e valida.
     $name = trim(htmlspecialchars($_POST['name']));
+    //strlen = conta a quantidade de caracteres
     if (strlen($name) < 3)
         $error .= '<li>Seu nome está muito curto;</li>';
 
     // Recebe o campo 'email' do formulário, sanitiza e valida.
-    $email = trim(filter_var($_POST['email'], FILTER_SANITIZE_EMAIL));
+    $email = trim(filter_var($_POST['email'], FILTER_SANITIZE_EMAIL));// FILTER_SANITIZE_EMAIL= não aceita todos os caracteres(%$#@)
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) :
 
         $error .= '<li>Seu e-mail está inválido;</li>';
