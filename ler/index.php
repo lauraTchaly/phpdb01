@@ -3,7 +3,7 @@
 /**
  * Arquivo que faz a configuração incial da página.
  */
-require($_SERVER['DOCUMENT_ROOT'] . '/_config.php');
+require(__DIR__ . '/_config.php');
 
 /**
  * Variável que define o título desta página.
@@ -238,7 +238,7 @@ endif;
 /**
  * Inclui o cabeçalho da página.
  */
-require($_SERVER['DOCUMENT_ROOT'] . '/_header.php');
+require(__DIR__ . '/_header.php');
 
 ?>
 
@@ -333,4 +333,4 @@ endif;
 /**
  * Inclui o rodapé da página.
  */
-require($_SERVER['DOCUMENT_ROOT'] . '/_footer.php');
+require(__DIR__ . '/_footer.php');

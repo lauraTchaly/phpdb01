@@ -3,7 +3,7 @@
 /**
  * Arquivo que faz a configuração incial da página.
  */
-require($_SERVER['DOCUMENT_ROOT'] . '/_config.php');
+require(__DIR__ . '/_config.php');
 
 /***********************************************
  * Seus códigos PHP desta página iniciam aqui! *
@@ -164,4 +164,4 @@ require($_SERVER['DOCUMENT_ROOT'] . '/_header.php');
 /**
  * Inclui o rodapé da página.
  */
-require($_SERVER['DOCUMENT_ROOT'] . '/_footer.php');
+require(__DIR__ . '/_footer.php');

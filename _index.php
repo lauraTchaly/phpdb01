@@ -4,7 +4,7 @@
  * Arquivo que faz a configuração incial da página.
  * Por exemplo, conecta-se ao banco de dados.
  */
-require($_SERVER['DOCUMENT_ROOT'] . '/_config.php');
+require(__DIR__ . '/_config.php');
 
 /***********************************************
  * Seus códigos PHP desta página iniciam aqui! *

@@ -3,8 +3,7 @@
 /**
  * Arquivo que faz a configuração incial da página.
  */
-require($_SERVER['DOCUMENT_ROOT'] . '/_config.php');
-
+require(__DIR__ . '/_config.php');
 /***********************************************
  * Seus códigos PHP desta página iniciam aqui! *
  ***********************************************/
@@ -62,7 +61,7 @@ $title = "Quem tem fome tem pressa...";
 /**
  * Inclui o cabeçalho da página.
  */
-require($_SERVER['DOCUMENT_ROOT'] . '/_header.php');
+require(__DIR__ . '/_header.php');
 
 ?>
 

@@ -11,8 +11,7 @@
  *     → https://www.php.net/manual/pt_BR/function.include.php
  *     → https://www.php.net/manual/pt_BR/language.variables.superglobals.php
  */
-require($_SERVER['DOCUMENT_ROOT'] . '/_config.php');
-
+require(__DIR__ . '/_config.php');
 /***********************************************
  * Seus códigos PHP desta página iniciam aqui! *
  ***********************************************/
